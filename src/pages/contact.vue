@@ -16,7 +16,9 @@ function handleSubmit(e) {
     e.target.reset();
     return false;
 }
- const placeholderName = ref("Ismingizni kiriting!")
+
+const placeholderName = ref("Ismingizni kiriting!")
+const placeholderEmail = ref("`E-mail`lingizni kiriting!")
 
 
 </script>
@@ -29,11 +31,12 @@ function handleSubmit(e) {
                 <div class="form-group">
                     <label for="name">Ismingiz:</label>
                     <!-- <input type="text" id="name" name="name" required> -->
-                    <input :placeholder="placeholderName" v-model="newName" />
+                    <input :placeholder="placeholderName" v-model="newName" required />
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <!-- <input type="email" id="email" name="email" required> -->
+                    <input :placeholder="placeholderEmail" v-model="newEmail" required />
                 </div>
                 <div class="form-group">
                     <label for="message">Xabar:</label>
@@ -41,6 +44,7 @@ function handleSubmit(e) {
                 </div>
                 <!-- <button type="submit">Yuborish</button> -->
                 <button @click="handleSubmit">Yuborish</button>
+                <!-- <button @change="onChange">Rangni almashtirish</button> -->
             </form>
         </div>
     </div>

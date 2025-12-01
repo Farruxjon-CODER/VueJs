@@ -5,7 +5,8 @@
                 <li><router-link to="/">Index</router-link></li>
                 <li> <router-link to="/about">About</router-link></li>
                 <li><router-link to="/service">Service</router-link></li>
-                <li> <router-link to="/contact">Contact</router-link>
+                <li> <router-link to="/contact">Contact</router-link></li>
+                <li> <router-link to="/homework-page">Homework</router-link>
                 </li>
             </ul>
         </nav>

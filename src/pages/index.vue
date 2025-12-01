@@ -1,6 +1,9 @@
 <script setup>
+    import { ref } from 'vue';
+
     const title = ref("Xush kelibsiz!")
-    import { ref } from 'vue'
+    const newWebsite = ref("Bu sizning yangi websitingiz")
+    
 </script>
 <template>
     <div>
@@ -8,7 +11,7 @@
             <div class="container">
                 <div class="hero">
                     <h1>{{ title }}</h1>
-                    <p style="font-size: 1.3rem;">Bu sizning yangi websitingiz</p>
+                    <p style="font-size: 1.3rem;">{{ newWebsite }}</p>
                     <p>Bu yerda o'z ma'lumotlaringizni joylashtiring</p>
                 </div>
             </div>
