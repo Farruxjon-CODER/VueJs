@@ -1,4 +1,7 @@
 <script setup>
+import { send } from 'vite';
+import { ref } from 'vue'
+
 function showPage(pageId) {
     const sections = document.querySelectorAll("section");
     sections.forEach((section) => {
@@ -13,6 +16,8 @@ function handleSubmit(e) {
     e.target.reset();
     return false;
 }
+ const placeholderName = ref("Ismingizni kiriting!")
+
 
 </script>
 <template>
@@ -23,7 +28,8 @@ function handleSubmit(e) {
             <form class="contact-form" onsubmit="return handleSubmit(event)">
                 <div class="form-group">
                     <label for="name">Ismingiz:</label>
-                    <input type="text" id="name" name="name" required>
+                    <!-- <input type="text" id="name" name="name" required> -->
+                    <input :placeholder="placeholderName" v-model="newName" />
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
@@ -33,7 +39,8 @@ function handleSubmit(e) {
                     <label for="message">Xabar:</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
-                <button type="submit">Yuborish</button>
+                <!-- <button type="submit">Yuborish</button> -->
+                <button @click="handleSubmit">Yuborish</button>
             </form>
         </div>
     </div>

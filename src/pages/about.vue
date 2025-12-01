@@ -1,14 +1,15 @@
 <script setup>
-
+    const about = ref("Biz haqimizda")
+    const mission = ref("Missiyamiz")
 </script>
 <template>
     <div>
         <div class="container">
-            <h1>Biz haqimizda</h1>
+            <h1>{{ about }}</h1>
             <p style="text-align: center;">Bizning kompaniyamiz haqida ma'lumot</p>
             <div class="about-content">
                 <div class="about-card">
-                    <h2>Missiyamiz</h2>
+                    <h2>{{ mission }}</h2>
                     <p>Biz mijozlarimizga eng yaxshi xizmatni taqdim etishga intilamiz va ularning ehtiyojlarini
                         qondirishga harakat qilamiz.</p>
                 </div>
