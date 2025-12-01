@@ -1,4 +1,7 @@
 <script setup>
+
+    import { ref } from 'vue';
+    
     const about = ref("Biz haqimizda")
     const mission = ref("Missiyamiz")
 </script>
