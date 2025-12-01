@@ -1,5 +1,5 @@
 <script setup>
-import { send } from 'vite';
+// import { send } from 'vite';
 import { ref } from 'vue'
 
 function showPage(pageId) {
