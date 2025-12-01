@@ -37,7 +37,7 @@ p{
 
 <script setup>
   // // import header from './components/header.vue'
-  import Header from "./components/header.vue"
+  import Header from "./components/Header.vue"
 </script>
 
 <template>
