@@ -1,6 +1,7 @@
 <script setup>
 // import { send } from 'vite';
-import { ref } from 'vue'
+import { ref } from 'vue';
+import PageTitle from '../components/PageTitle.vue';
 
 function showPage(pageId) {
     const sections = document.querySelectorAll("section");
@@ -24,6 +25,7 @@ const placeholderEmail = ref("`E-mail`lingizni kiriting!")
 </script>
 <template>
     <div>
+        <page-title>Siz Contact sahifadasiz!</page-title>
         <div class="container">
             <h1>Biz bilan bog'laning</h1>
             <p style="text-align: center;">Savollaringiz bormi? Biz bilan bog'laning!</p>

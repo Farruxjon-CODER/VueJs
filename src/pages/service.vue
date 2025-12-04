@@ -1,17 +1,19 @@
 <script setup>
-    import { ref } from 'vue'
+import { ref } from 'vue';
+import PageTitle from '../components/PageTitle.vue';
 
-    const Services = ref("Xizmatlarimiz");
-    const WebDeveloping = ref("Web Dasturlash");
-    const Design = ref("Dizayn");
-    const Marketing = ref("Marketing");
-    const Consultation = ref("Konsultatsiya");
-    const SEO = ref("SEO");
-    const Support = ref("Qo'llab-quvvatlash")
+const Services = ref("Xizmatlarimiz");
+const WebDeveloping = ref("Web Dasturlash");
+const Design = ref("Dizayn");
+const Marketing = ref("Marketing");
+const Consultation = ref("Konsultatsiya");
+const SEO = ref("SEO");
+const Support = ref("Qo'llab-quvvatlash")
 
 </script>
 <template>
     <div>
+        <page-title>Siz Service sahifadasiz!</page-title>
         <div class="container">
             <h1>{{ Services }}</h1>
             <p style="text-align: center;">Biz taklif qiladigan xizmatlar</p>

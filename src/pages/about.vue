@@ -1,16 +1,18 @@
 <script setup>
 
-    import { ref } from 'vue';
-    
-    const about = ref("Biz haqimizda")
-    const mission = ref("Missiyamiz")
-    const divizion = ref("Vizyonimiz")
-    const values = ref("Qadriyatlarimiz")
-    const aboutOurCompany = ref("Bizning kompaniyamiz haqida ma'lumot")
+import { ref } from 'vue';
+import PageTitle from '../components/PageTitle.vue';
+
+const about = ref("Biz haqimizda")
+const mission = ref("Missiyamiz")
+const divizion = ref("Vizyonimiz")
+const values = ref("Qadriyatlarimiz")
+const aboutOurCompany = ref("Bizning kompaniyamiz haqida ma'lumot")
 
 </script>
 <template>
     <div>
+        <page-title>Siz About sahifadasiz!</page-title>
         <div class="container">
             <h1>{{ about }}</h1>
             <p style="text-align: center;">{{ aboutOurCompany }}</p>

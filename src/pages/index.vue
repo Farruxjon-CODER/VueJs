@@ -1,5 +1,6 @@
 <script setup>
     import { ref } from 'vue';
+    import PageTitle from '../components/PageTitle.vue'
 
     const title = ref("Xush kelibsiz!")
     const newWebsite = ref("Bu sizning yangi websitingiz")
@@ -7,6 +8,7 @@
 </script>
 <template>
     <div>
+        <page-title>Siz Index sahifadasiz!</page-title>
         <section id="home" class="active">
             <div class="container">
                 <div class="hero">
