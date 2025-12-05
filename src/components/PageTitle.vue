@@ -1,4 +1,7 @@
 <script setup>
+   const props = defineProps({
+    info: Object
+   })
 
 </script>
 
@@ -8,6 +11,13 @@
             <h1>
                 <slot />
             </h1>
+            <h3>
+                {{ info }}
+            </h3>
+            <li v-for="item in props.info">
+                <button style="background-color: skyblue;">Tahrirlash</button>
+                <button style="background-color: red;">O'chirish</button>
+            </li>
         </div>
     </div>
 </template>

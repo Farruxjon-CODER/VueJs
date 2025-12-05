@@ -40,11 +40,36 @@ function dicrement() {
 }
 
 
+let data = ref([
+    { name: "iPhone: 17 Pro", price: 2000, image:'/img/iPhone15Pro.jpg',  action: true },
+    { name: "iPhone: 16 Pro", price: 1800, image:'/img/iPhone15Pro.jpg', action: true },
+    { name: "iPhone: 15 Pro", price: 1600, image:'/img/iPhone15Pro.jpg', action: true },
+    { name: "iPhone: 14 Pro", price: 1400, image:'/img/iPhone14Pro.jpg', action: true },
+    { name: "iPhone: 13 Pro", price: 1200, image:'/img/iPhone13Pro.jpg', action: true },
+    { name: "iPhone: 12 Pro", price: 1000, image:'/img/iPhone12Pro.jpg', action: true },
+    { name: "iPhone: 11 Pro", price: 900, image:'/img/iPhone11Pro.jpg', action: true },
+    { name: "iPhone: X", price: 800, image: '/img/iPhoneX.jpg', action: false },
+    { name: "iPhone: 8", price: 600, image: '/img/iPhone8.jpg', action: false },
+    { name: "iPhone: 7", price: 500, image: '/img/iPhone7.jpg', action: false },
+    { name: "iPhone: 6", price: 400, image: '/img/iPhone6.jpg', action: false },
+    { name: "iPhone: 5", price: 300, image: '/img/iPhone5.jpg', action: false },
+])
+
 
 </script>
 
 <template>
     <div>
+        <div>
+            <page-title :info="data"></page-title>
+            <div class="container">
+                <li v-for="item in data">
+                    <h3>{{ item.name }}</h3>
+                    <h3>{{ item.price }}</h3>
+                    <img :src="item.image" alt="Telefon rasmi" />
+                </li>
+            </div>
+        </div>
         <page-title>Siz Index sahifadasiz!</page-title>
         <div class="container">
             <h1 v-if="isAdmin" class="main">Xush kelibsiz Admin</h1>
@@ -83,4 +108,14 @@ function dicrement() {
 
     </div>
 </template>
-<style scoped></style>
+<style scoped>
+.container {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 10px;
+    border-style: groove;
+}
+</style>
