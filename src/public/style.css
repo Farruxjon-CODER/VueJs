@@ -188,15 +188,15 @@
         }
 
         button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: #667eea;
+            color: rgb(0, 0, 0);
             padding: 1rem 2rem;
             border: none;
             border-radius: 5px;
-            font-size: 1rem;
-            font-weight: 600;
+            /* font-size: 1rem; */
+            /* font-weight: 600; */
             cursor: pointer;
-            transition: transform 0.3s;
+            /* transition: transform 0.3s; */
         }
 
         button:hover {
